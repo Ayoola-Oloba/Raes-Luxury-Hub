@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <nav class="navbar">
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">services</a>
+            <a href="">projects</a>
+            <a href="">contact</a>
+        </nav>
+        <div class="menu-icon"><i class="bx bx-menu"></i></div>
+    </header>
+
+    <script>
+        let navbar = document.querySelector('.navbar');
+        let menuIcon = document.querySelector('.menu-icon')
+
+        menuIcon.addEventListener('click', ()=>{
+            navbar.classList.toggle('active');
+            menuIcon.classList.toggle('bx-x');
+        })
+    </script>
+</body>
+</html>

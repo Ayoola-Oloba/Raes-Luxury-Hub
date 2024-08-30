@@ -1,0 +1,484 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container p{
+    text-align: center;
+}
+.top .container{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* height: 10vh; */
+    
+}
+h1{
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    flex: 1;
+}
+.top .container a{
+    text-decoration: none;
+    color: black;
+}
+.top{
+    background-color: rgb(18, 177, 240);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+    
+}
+.navbar{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding: 10px 15px;
+    background-color: aqua;
+    
+}
+.navbar.active{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 0;
+    
+}
+/* #bx.active{
+    display: none;
+} */
+.menu-icon{
+    font-size: 30px;
+    
+}
+/* .menu-icon.active{
+    display: none;
+} */
+.top .container .navbar a{
+    text-decoration: none;
+    color: black;
+}
+.top .container .navbar a:hover{
+    color:  rgb(18, 177, 240);
+}
+.home{
+    top: 100%;
+    /* padding-top: 50px; */
+}
+
+h2{
+    font-size: 70px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    
+    
+}
+.topic{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    background: url("barbie.jpg");
+}
+
+.crown img{
+    width: 30%;
+    border: greenyellow 3px solid;
+    border-radius: 10px;
+}
+.crown{
+    display: flex;
+    justify-content: space-between;
+}
+.information{
+    border: black 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(167, 209, 139);
+}
+.information p{
+    display: flex;
+    align-items: center;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.info a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.example{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.example img{
+    width: 100%;
+    max-height: 35vh;
+}
+/* .example img #eg1:focus{
+    max-width: 80em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+h3{
+    /* color: royalblue; */
+}
+
+#TOPS{
+    background-color: rebeccapurple;
+    padding: 5px;
+}
+#top{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#top img{
+    width: 100%;
+    /* height: 50vh; */
+    max-height: 40vh;
+}
+#TOPS .container button{
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+#TOPS .container button:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+.t1{
+    max-width: 220px;
+    background-color: darkviolet;
+    padding: 2px;
+    margin: 10px;
+}
+#pics{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%; */
+}
+.s1 img{
+    width: 100%;
+    max-height: 35vh;
+    /* margin: 0 auto; */
+}
+.s1 p{
+    color: white;
+}
+#SHORTS{
+    background-color: red;
+    padding: 5px;
+}
+#short{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#short img{
+    width: 100%;
+    max-height: 28vh;
+}
+.st1{
+    max-width: 220px;
+    background-color: darkred;
+    padding: 2px;
+    margin: 10px;
+}
+#SHORTS .container button{
+    background-color: darkred;
+    padding: 5px;
+    border-radius: 5px;
+}
+#SHORTS .container button:hover{
+    background-color: black;
+    color: darkred;
+}
+#SHOES{
+    background-color: royalblue;
+    padding: 5px;
+}
+#shoe1:focus{
+    display: block;
+}
+.s1{
+    max-width: 220px;
+    background-color: darkblue;
+    padding: 2px;
+    margin: 10px;
+}
+#SHOES .container button{
+    background-color: darkblue;
+    padding: 3px;
+    border-radius: 5px;
+}
+#SHOES .container button:hover{
+    background-color: black;
+    color: darkblue;
+}
+
+hr{
+    margin: 20px;
+}
+#heels{
+    background-color: thistle;
+    padding: 5px;
+}
+#heel{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#heel img{
+    width: 100%;
+    max-height: 32vh;
+}
+#WRISTWATCH{
+    background-color: goldenrod;
+    padding: 5px;
+}
+#wrist{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#wrist img{
+    width: 100%;
+    max-height: 35vh;
+}
+#WRISTWATCH .container button{
+    background-color: gold;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+#WRISTWATCH .container button:hover{
+    background-color: darkgoldenrod;
+    color: black;
+}
+.w1{
+    max-width: 220px;
+    background-color: gold;
+    padding: 2px;
+    margin: 10px;
+}
+#GOWN{
+    background-color: greenyellow;
+    padding: 5px;
+}
+.dress{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.dress img{
+    width: 100%;
+    height: 90vh;
+    max-height: 45vh;
+}
+footer{
+    background-color: rgb(18, 177, 240);
+    margin: 0 auto;
+    padding: 5px;
+}
+
+@media screen and (max-width:1020px){
+    .container{
+        max-width: 800px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .example img{
+        width: 100%;
+        max-height: 27vh;
+    }
+    #top img{
+        /* height: 50vh; */
+        max-height: 35vh;
+    }
+    #short img{
+        max-height: 23vh;
+    }
+    .dress img{
+        /* width: 100%; */
+        height: 50vh;
+        max-height: 36vh;
+    }
+    #heel img{
+        /* width: 100%; */
+        height: 50vh;
+        max-height: 30vh;
+    }
+}
+
+@media screen and (max-width:820px){
+    .container{
+        max-width: 700px;
+    }
+    #short img{
+        max-height: 23vh;
+    }
+    .dress img{
+        /* width: 100%; */
+        height: 50vh;
+        max-height: 36vh;
+    }
+    #heel img{
+        /* width: 100%; */
+        height: 50vh;
+        max-height: 30vh;
+    } */
+}
+
+@media screen and (max-width:720px){
+    .container{
+        max-width: 600px;
+    }
+    h1{
+        font-size: 15px;
+        padding: 4px;
+    }
+    .navbar{
+        padding: 5px 10px;
+    }
+    .top .container .navbar a{
+        font-size: 10px;
+        /* text-decoration: none;
+        color: black; */
+    }
+    .menu-icon{
+        font-size: 25px;
+    }
+    .example{
+        /* display: grid; */
+        grid-template-columns: repeat(3,1fr);
+    }
+    #top img{
+        height: 50vh;
+        max-height: 33vh;
+    }
+    #short{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+    #short img{
+        width: 100%;
+        max-height: 28vh;
+    }
+    .st1{
+        max-width: 90%;
+        width: 100%;
+        /* max-width: 80%; */
+        padding: 5px;
+        
+    }
+    .dress img{
+        /* width: 100%; */
+        /* max-width: 100%; */
+        height: 50vh;
+        max-height: 50vh;
+        padding: 5px;
+    }
+    #pics{
+        /* display: grid; */
+        grid-template-columns: repeat(3,1fr);
+    }
+    .dress{
+        /* display: grid; */
+        grid-template-columns: repeat(2,1fr);
+    }
+    #wrist{
+        /* display: grid; */
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+@media screen and (max-width:590px){
+    .container{
+        max-width: 470px;
+    }
+    h2{
+        font-size: 38px;
+    }
+    .crown{
+        height: 35vh;
+    }
+    .crown img{
+        width: 55%;
+    }
+    .information p, .info a{
+        font-size: 13px;
+    }
+    .example img{
+        height: 30vh;
+    }
+    #top img{
+        height: 25vh;
+    }
+    .s1 p{
+        font-size: 12px;
+    }
+    #heel img{
+        /* width: 100%; */
+        height: 40vh;
+        max-height: 22vh;
+    }
+}
+
+@media screen and (max-width:430px){
+    .container{
+        max-width: 310px;
+    }
+    .crown img{
+        width: 38%;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .crown{
+        height: 25vh;
+    }
+    .example img{
+        height: 20vh;
+    }
+    #top{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #top img{
+        width: 100%;
+        height: 20vh;
+    }
+    .dress img{
+        height: 40vh;
+        max-height: 30vh;
+        padding: 5px;
+    }
+    #pics{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #heel{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
