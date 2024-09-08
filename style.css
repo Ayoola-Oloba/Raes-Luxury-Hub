@@ -418,6 +418,13 @@ footer{
     .container{
         max-width: 470px;
     }
+    .navbar.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
     h2{
         font-size: 38px;
     }
